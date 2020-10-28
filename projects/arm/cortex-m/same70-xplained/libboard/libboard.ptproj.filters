@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="arm">
+      <UniqueIdentifier>{87875a30-f806-47eb-b73b-3747f0a9fc39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\samv7">
+      <UniqueIdentifier>{03fcb4ff-6b9c-4ac2-89ed-714da142a37d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\samv7\same70-xplained">
+      <UniqueIdentifier>{569e7af1-e3ef-47b3-8643-3ba5e6d14127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\samv7\same70-xplained\src">
+      <UniqueIdentifier>{ca4d0b16-83dd-4dbb-92eb-b0a96b457c5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libboards\arm\samv7\same70-xplained\src\sam_appinit.c">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libboards\arm\samv7\same70-xplained\src\sam_at24config.c">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libboards\arm\samv7\same70-xplained\src\sam_autoleds.c">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libboards\arm\samv7\same70-xplained\src\sam_boot.c">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libboards\arm\samv7\same70-xplained\src\sam_bringup.c">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libboards\arm\samv7\same70-xplained\src\sam_buttons.c">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libboards\arm\samv7\same70-xplained\src\sam_hsmci.c">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libboards\arm\samv7\same70-xplained\src\sam_sdram.c">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libboards\arm\samv7\same70-xplained\src\same70-xplained.h">
+      <Filter>arm\samv7\same70-xplained\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

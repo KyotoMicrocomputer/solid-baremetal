@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_clang|SOLID_ARM">
+      <Configuration>Debug_clang</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_tasan|SOLID_ARM">
+      <Configuration>Debug_tasan</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_tracepoint|SOLID_ARM">
+      <Configuration>Debug_tracepoint</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_clang|SOLID_ARM">
+      <Configuration>Release_clang</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|SOLID_ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|SOLID_ARM">
+      <Configuration>Release</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ff954f3d-3226-493f-afa7-767eb2419c2a}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeGCC_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeGCC_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)$(SolutionName).props" Condition="exists('$(SolutionDir)$(SolutionName).props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <EXEGCC_Core>Cortex-M7</EXEGCC_Core>
+    <IncludePath>$(SolutionDir)\libfs;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+    <EXEGCC_VFP>FPv5-DP-D16_hard</EXEGCC_VFP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'">
+    <EnableAddressSanitizer>true</EnableAddressSanitizer>
+    <IncludePath>$(SolutionDir)\libfs;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libfs;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libfs;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libfs;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+    <EXEGCC_Core>Cortex-M7</EXEGCC_Core>
+    <EXEGCC_VFP>FPv5-DP-D16_hard</EXEGCC_VFP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libfs;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>__KERNEL__</exeGCC_PreprocessorDefinitions>
+      <AdditionalOptions>-fno-builtin  -Wall -Wstrict-prototypes -Wshadow -Wundef -fno-strict-aliasing -Os -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard </AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>USE_TASAN;%(exeGCC_PreprocessorDefinitions)</exeGCC_PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>USE_TRACE_POINT;%(exeGCC_PreprocessorDefinitions)</exeGCC_PreprocessorDefinitions>
+      <AdditionalOptions>-finstrument-functions %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O2</exeGCC_Optimization>
+      <exeClang_Optimization>O2</exeClang_Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>Os</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <AdditionalOptions>-Wshadow -Wundef -fno-strict-aliasing -fno-builtin -Wstrict-prototypes %(AdditionalOptions)</AdditionalOptions>
+      <exeGCC_PreprocessorDefinitions>__KERNEL__</exeGCC_PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O2</exeGCC_Optimization>
+      <exeClang_Optimization>O2</exeClang_Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dirent\fs_closedir.c" />
+    <ClCompile Include="dirent\fs_opendir.c" />
+    <ClCompile Include="dirent\fs_readdir.c" />
+    <ClCompile Include="dirent\fs_rewinddir.c" />
+    <ClCompile Include="dirent\fs_seekdir.c" />
+    <ClCompile Include="driver\fs_blockpartition.c" />
+    <ClCompile Include="driver\fs_blockproxy.c" />
+    <ClCompile Include="driver\fs_closeblockdriver.c" />
+    <ClCompile Include="driver\fs_findblockdriver.c" />
+    <ClCompile Include="driver\fs_findmtddriver.c" />
+    <ClCompile Include="driver\fs_mtdproxy.c" />
+    <ClCompile Include="driver\fs_openblockdriver.c" />
+    <ClCompile Include="driver\fs_registerblockdriver.c" />
+    <ClCompile Include="driver\fs_registerdriver.c" />
+    <ClCompile Include="driver\fs_registermtddriver.c" />
+    <ClCompile Include="driver\fs_unregisterblockdriver.c" />
+    <ClCompile Include="driver\fs_unregisterdriver.c" />
+    <ClCompile Include="driver\fs_unregistermtddriver.c" />
+    <ClCompile Include="fat\fs_fat32.c" />
+    <ClCompile Include="fat\fs_fat32attrib.c" />
+    <ClCompile Include="fat\fs_fat32dirent.c" />
+    <ClCompile Include="fat\fs_fat32util.c" />
+    <ClCompile Include="fs_initialize.c" />
+    <ClCompile Include="inode\fs_fileclose.c" />
+    <ClCompile Include="inode\fs_filedetach.c" />
+    <ClCompile Include="inode\fs_fileopen.c" />
+    <ClCompile Include="inode\fs_files.c" />
+    <ClCompile Include="inode\fs_foreachinode.c" />
+    <ClCompile Include="inode\fs_inode.c" />
+    <ClCompile Include="inode\fs_inodeaddref.c" />
+    <ClCompile Include="inode\fs_inodebasename.c" />
+    <ClCompile Include="inode\fs_inodefind.c" />
+    <ClCompile Include="inode\fs_inodefree.c" />
+    <ClCompile Include="inode\fs_inoderelease.c" />
+    <ClCompile Include="inode\fs_inoderemove.c" />
+    <ClCompile Include="inode\fs_inodereserve.c" />
+    <ClCompile Include="inode\fs_inodesearch.c" />
+    <ClCompile Include="mmap\fs_mmap.c" />
+    <ClCompile Include="mmap\fs_munmap.c" />
+    <ClCompile Include="mount\fs_foreachmountpoint.c" />
+    <ClCompile Include="mount\fs_gettype.c" />
+    <ClCompile Include="mount\fs_mount.c" />
+    <ClCompile Include="mount\fs_procfs_mount.c" />
+    <ClCompile Include="mount\fs_umount2.c" />
+    <ClCompile Include="mqueue\mq_close.c" />
+    <ClCompile Include="mqueue\mq_open.c" />
+    <ClCompile Include="mqueue\mq_unlink.c" />
+    <ClCompile Include="partition\fs_partition.c" />
+    <ClCompile Include="procfs\fs_procfs.c" />
+    <ClCompile Include="procfs\fs_procfscpuload.c" />
+    <ClCompile Include="procfs\fs_procfsiobinfo.c" />
+    <ClCompile Include="procfs\fs_procfsmeminfo.c" />
+    <ClCompile Include="procfs\fs_procfsproc.c" />
+    <ClCompile Include="procfs\fs_procfsuptime.c" />
+    <ClCompile Include="procfs\fs_procfsutil.c" />
+    <ClCompile Include="procfs\fs_procfsversion.c" />
+    <ClCompile Include="vfs\fs_close.c" />
+    <ClCompile Include="vfs\fs_dup.c" />
+    <ClCompile Include="vfs\fs_dup2.c" />
+    <ClCompile Include="vfs\fs_dupfd.c" />
+    <ClCompile Include="vfs\fs_dupfd2.c" />
+    <ClCompile Include="vfs\fs_epoll.c" />
+    <ClCompile Include="vfs\fs_fcntl.c" />
+    <ClCompile Include="vfs\fs_fdopen.c" />
+    <ClCompile Include="vfs\fs_fstat.c" />
+    <ClCompile Include="vfs\fs_fstatfs.c" />
+    <ClCompile Include="vfs\fs_fsync.c" />
+    <ClCompile Include="vfs\fs_getfilep.c" />
+    <ClCompile Include="vfs\fs_ioctl.c" />
+    <ClCompile Include="vfs\fs_lseek.c" />
+    <ClCompile Include="vfs\fs_mkdir.c" />
+    <ClCompile Include="vfs\fs_open.c" />
+    <ClCompile Include="vfs\fs_poll.c" />
+    <ClCompile Include="vfs\fs_pread.c" />
+    <ClCompile Include="vfs\fs_pwrite.c" />
+    <ClCompile Include="vfs\fs_read.c" />
+    <ClCompile Include="vfs\fs_readlink.c" />
+    <ClCompile Include="vfs\fs_rename.c" />
+    <ClCompile Include="vfs\fs_rmdir.c" />
+    <ClCompile Include="vfs\fs_select.c" />
+    <ClCompile Include="vfs\fs_stat.c" />
+    <ClCompile Include="vfs\fs_statfs.c" />
+    <ClCompile Include="vfs\fs_symlink.c" />
+    <ClCompile Include="vfs\fs_truncate.c" />
+    <ClCompile Include="vfs\fs_unlink.c" />
+    <ClCompile Include="vfs\fs_write.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="driver\driver.h" />
+    <ClInclude Include="fat\fs_fat32.h" />
+    <ClInclude Include="inode\inode.h" />
+    <ClInclude Include="mmap\fs_rammap.h" />
+    <ClInclude Include="mount\mount.h" />
+    <ClInclude Include="mqueue\mqueue.h" />
+    <ClInclude Include="partition\partition.h" />
+  </ItemGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

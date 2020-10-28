@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_clang|SOLID_ARM">
+      <Configuration>Debug_clang</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_tasan|SOLID_ARM">
+      <Configuration>Debug_tasan</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_tracepoint|SOLID_ARM">
+      <Configuration>Debug_tracepoint</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_clang|SOLID_ARM">
+      <Configuration>Release_clang</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|SOLID_ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|SOLID_ARM">
+      <Configuration>Release</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ff0a8f6c-2071-404e-93e9-cc04c178f629}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeGCC_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeGCC_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)$(SolutionName).props" Condition="exists('$(SolutionDir)$(SolutionName).props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <EXEGCC_Core>Cortex-M7</EXEGCC_Core>
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+    <EXEGCC_VFP>FPv5-DP-D16_hard</EXEGCC_VFP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'">
+    <EnableAddressSanitizer>true</EnableAddressSanitizer>
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+    <EXEGCC_Core>Cortex-M7</EXEGCC_Core>
+    <EXEGCC_VFP>FPv5-DP-D16_hard</EXEGCC_VFP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>__KERNEL__</exeGCC_PreprocessorDefinitions>
+      <AdditionalOptions>-fno-builtin  -Wall -Wstrict-prototypes -Wshadow -Wundef -fno-strict-aliasing -Os -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard </AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>USE_TASAN;%(exeGCC_PreprocessorDefinitions)</exeGCC_PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>USE_TRACE_POINT;%(exeGCC_PreprocessorDefinitions)</exeGCC_PreprocessorDefinitions>
+      <AdditionalOptions>-finstrument-functions %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O2</exeGCC_Optimization>
+      <exeClang_Optimization>O2</exeClang_Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>Os</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <AdditionalOptions>-Wshadow -Wundef -fno-strict-aliasing -fno-builtin -Wstrict-prototypes %(AdditionalOptions)</AdditionalOptions>
+      <exeGCC_PreprocessorDefinitions>__KERNEL__</exeGCC_PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O2</exeGCC_Optimization>
+      <exeClang_Optimization>O2</exeClang_Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="assert\lib_assert.c" />
+    <ClCompile Include="builtin\lib_builtin_forindex.c" />
+    <ClCompile Include="builtin\lib_builtin_getname.c" />
+    <ClCompile Include="builtin\lib_builtin_isavail.c" />
+    <ClCompile Include="ctype\lib_isalnum.c" />
+    <ClCompile Include="ctype\lib_isalpha.c" />
+    <ClCompile Include="ctype\lib_isascii.c" />
+    <ClCompile Include="ctype\lib_isblank.c" />
+    <ClCompile Include="ctype\lib_iscntrl.c" />
+    <ClCompile Include="ctype\lib_isdigit.c" />
+    <ClCompile Include="ctype\lib_isgraph.c" />
+    <ClCompile Include="ctype\lib_islower.c" />
+    <ClCompile Include="ctype\lib_isprint.c" />
+    <ClCompile Include="ctype\lib_ispunct.c" />
+    <ClCompile Include="ctype\lib_isspace.c" />
+    <ClCompile Include="ctype\lib_isupper.c" />
+    <ClCompile Include="ctype\lib_isxdigit.c" />
+    <ClCompile Include="ctype\lib_tolower.c" />
+    <ClCompile Include="ctype\lib_toupper.c" />
+    <ClCompile Include="dirent\lib_alphasort.c" />
+    <ClCompile Include="dirent\lib_ftw.c" />
+    <ClCompile Include="dirent\lib_nftw.c" />
+    <ClCompile Include="dirent\lib_readdirr.c" />
+    <ClCompile Include="dirent\lib_scandir.c" />
+    <ClCompile Include="dirent\lib_telldir.c" />
+    <ClCompile Include="endian\lib_swap16.c" />
+    <ClCompile Include="endian\lib_swap32.c" />
+    <ClCompile Include="endian\lib_swap64.c" />
+    <ClCompile Include="errno\lib_errno.c" />
+    <ClCompile Include="fixedmath\lib_b16atan2.c" />
+    <ClCompile Include="fixedmath\lib_b16cos.c" />
+    <ClCompile Include="fixedmath\lib_b16sin.c" />
+    <ClCompile Include="fixedmath\lib_fixedmath.c" />
+    <ClCompile Include="fixedmath\lib_ubsqrt.c" />
+    <ClCompile Include="grp\lib_getgrbuf.c" />
+    <ClCompile Include="grp\lib_getgrbufr.c" />
+    <ClCompile Include="grp\lib_getgrgid.c" />
+    <ClCompile Include="grp\lib_getgrgidr.c" />
+    <ClCompile Include="grp\lib_getgrnam.c" />
+    <ClCompile Include="grp\lib_getgrnamr.c" />
+    <ClCompile Include="grp\lib_initgroups.c" />
+    <ClCompile Include="inttypes\lib_imaxabs.c" />
+    <ClCompile Include="inttypes\lib_strtoimax.c" />
+    <ClCompile Include="inttypes\lib_strtoumax.c" />
+    <ClCompile Include="libgen\lib_basename.c" />
+    <ClCompile Include="libgen\lib_dirname.c" />
+    <ClCompile Include="misc\lib_crc16.c" />
+    <ClCompile Include="misc\lib_crc32.c" />
+    <ClCompile Include="misc\lib_crc64.c" />
+    <ClCompile Include="misc\lib_crc8.c" />
+    <ClCompile Include="misc\lib_crc8ccitt.c" />
+    <ClCompile Include="misc\lib_debug.c" />
+    <ClCompile Include="misc\lib_dumpbuffer.c" />
+    <ClCompile Include="misc\lib_filesem.c" />
+    <ClCompile Include="misc\lib_match.c" />
+    <ClCompile Include="misc\lib_sendfile.c" />
+    <ClCompile Include="misc\lib_stream.c" />
+    <ClCompile Include="misc\lib_streamsem.c" />
+    <ClCompile Include="misc\lib_tea_decrypt.c" />
+    <ClCompile Include="misc\lib_tea_encrypt.c" />
+    <ClCompile Include="misc\lib_uadd32x64.c" />
+    <ClCompile Include="misc\lib_uadd64.c" />
+    <ClCompile Include="misc\lib_umask.c" />
+    <ClCompile Include="misc\lib_umul32.c" />
+    <ClCompile Include="misc\lib_umul32x64.c" />
+    <ClCompile Include="misc\lib_umul64.c" />
+    <ClCompile Include="misc\lib_usub64.c" />
+    <ClCompile Include="misc\lib_usub64x32.c" />
+    <ClCompile Include="misc\lib_utsname.c" />
+    <ClCompile Include="misc\lib_xorshift128.c" />
+    <ClCompile Include="net\lib_addrconfig.c" />
+    <ClCompile Include="net\lib_etherntoa.c" />
+    <ClCompile Include="net\lib_htonl.c" />
+    <ClCompile Include="net\lib_htons.c" />
+    <ClCompile Include="net\lib_inetaddr.c" />
+    <ClCompile Include="net\lib_inetaton.c" />
+    <ClCompile Include="net\lib_inetntoa.c" />
+    <ClCompile Include="net\lib_inetntop.c" />
+    <ClCompile Include="net\lib_inetpton.c" />
+    <ClCompile Include="pthread\pthread_attr_destroy.c" />
+    <ClCompile Include="pthread\pthread_attr_getdetachstate.c" />
+    <ClCompile Include="pthread\pthread_attr_getinheritsched.c" />
+    <ClCompile Include="pthread\pthread_attr_getschedparam.c" />
+    <ClCompile Include="pthread\pthread_attr_getschedpolicy.c" />
+    <ClCompile Include="pthread\pthread_attr_getstack.c" />
+    <ClCompile Include="pthread\pthread_attr_getstacksize.c" />
+    <ClCompile Include="pthread\pthread_attr_init.c" />
+    <ClCompile Include="pthread\pthread_attr_setdetachstate.c" />
+    <ClCompile Include="pthread\pthread_attr_setinheritsched.c" />
+    <ClCompile Include="pthread\pthread_attr_setschedparam.c" />
+    <ClCompile Include="pthread\pthread_attr_setschedpolicy.c" />
+    <ClCompile Include="pthread\pthread_attr_setstack.c" />
+    <ClCompile Include="pthread\pthread_attr_setstacksize.c" />
+    <ClCompile Include="pthread\pthread_barrierattr_destroy.c" />
+    <ClCompile Include="pthread\pthread_barrierattr_getpshared.c" />
+    <ClCompile Include="pthread\pthread_barrierattr_init.c" />
+    <ClCompile Include="pthread\pthread_barrierattr_setpshared.c" />
+    <ClCompile Include="pthread\pthread_barrierdestroy.c" />
+    <ClCompile Include="pthread\pthread_barrierinit.c" />
+    <ClCompile Include="pthread\pthread_barrierwait.c" />
+    <ClCompile Include="pthread\pthread_condattr_destroy.c" />
+    <ClCompile Include="pthread\pthread_condattr_getclock.c" />
+    <ClCompile Include="pthread\pthread_condattr_init.c" />
+    <ClCompile Include="pthread\pthread_condattr_setclock.c" />
+    <ClCompile Include="pthread\pthread_conddestroy.c" />
+    <ClCompile Include="pthread\pthread_condinit.c" />
+    <ClCompile Include="pthread\pthread_condtimedwait.c" />
+    <ClCompile Include="pthread\pthread_getspecific.c" />
+    <ClCompile Include="pthread\pthread_get_stackaddr_np.c" />
+    <ClCompile Include="pthread\pthread_get_stacksize_np.c" />
+    <ClCompile Include="pthread\pthread_keycreate.c" />
+    <ClCompile Include="pthread\pthread_keydelete.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_destroy.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_getprotocol.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_getpshared.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_getrobust.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_gettype.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_init.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_setprotocol.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_setpshared.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_setrobust.c" />
+    <ClCompile Include="pthread\pthread_mutexattr_settype.c" />
+    <ClCompile Include="pthread\pthread_mutex_lock.c" />
+    <ClCompile Include="pthread\pthread_once.c" />
+    <ClCompile Include="pthread\pthread_rwlock.c" />
+    <ClCompile Include="pthread\pthread_rwlock_rdlock.c" />
+    <ClCompile Include="pthread\pthread_rwlock_wrlock.c" />
+    <ClCompile Include="pthread\pthread_setcancelstate.c" />
+    <ClCompile Include="pthread\pthread_setcanceltype.c" />
+    <ClCompile Include="pthread\pthread_setspecific.c" />
+    <ClCompile Include="pthread\pthread_testcancel.c" />
+    <ClCompile Include="pthread\pthread_yield.c" />
+    <ClCompile Include="pwd\lib_getpwbuf.c" />
+    <ClCompile Include="pwd\lib_getpwbufr.c" />
+    <ClCompile Include="pwd\lib_getpwnam.c" />
+    <ClCompile Include="pwd\lib_getpwnamr.c" />
+    <ClCompile Include="pwd\lib_getpwuid.c" />
+    <ClCompile Include="pwd\lib_getpwuidr.c" />
+    <ClCompile Include="queue\dq_addafter.c" />
+    <ClCompile Include="queue\dq_addbefore.c" />
+    <ClCompile Include="queue\dq_addfirst.c" />
+    <ClCompile Include="queue\dq_addlast.c" />
+    <ClCompile Include="queue\dq_cat.c" />
+    <ClCompile Include="queue\dq_count.c" />
+    <ClCompile Include="queue\dq_rem.c" />
+    <ClCompile Include="queue\dq_remfirst.c" />
+    <ClCompile Include="queue\dq_remlast.c" />
+    <ClCompile Include="queue\sq_addafter.c" />
+    <ClCompile Include="queue\sq_addfirst.c" />
+    <ClCompile Include="queue\sq_addlast.c" />
+    <ClCompile Include="queue\sq_cat.c" />
+    <ClCompile Include="queue\sq_count.c" />
+    <ClCompile Include="queue\sq_rem.c" />
+    <ClCompile Include="queue\sq_remafter.c" />
+    <ClCompile Include="queue\sq_remfirst.c" />
+    <ClCompile Include="queue\sq_remlast.c" />
+    <ClCompile Include="sched\sched_getprioritymax.c" />
+    <ClCompile Include="sched\sched_getprioritymin.c" />
+    <ClCompile Include="sched\task_setcanceltype.c" />
+    <ClCompile Include="sched\task_startup.c" />
+    <ClCompile Include="sched\task_testcancel.c" />
+    <ClCompile Include="semaphore\sem_getprotocol.c" />
+    <ClCompile Include="semaphore\sem_getvalue.c" />
+    <ClCompile Include="semaphore\sem_init.c" />
+    <ClCompile Include="semaphore\sem_setprotocol.c" />
+    <ClCompile Include="signal\sig_addset.c" />
+    <ClCompile Include="signal\sig_delset.c" />
+    <ClCompile Include="signal\sig_emptyset.c" />
+    <ClCompile Include="signal\sig_fillset.c" />
+    <ClCompile Include="signal\sig_hold.c" />
+    <ClCompile Include="signal\sig_ignore.c" />
+    <ClCompile Include="signal\sig_ismember.c" />
+    <ClCompile Include="signal\sig_pause.c" />
+    <ClCompile Include="signal\sig_psignal.c" />
+    <ClCompile Include="signal\sig_raise.c" />
+    <ClCompile Include="signal\sig_relse.c" />
+    <ClCompile Include="signal\sig_set.c" />
+    <ClCompile Include="signal\sig_signal.c" />
+    <ClCompile Include="signal\sig_wait.c" />
+    <ClCompile Include="spawn\lib_psa_getflags.c" />
+    <ClCompile Include="spawn\lib_psa_getschedparam.c" />
+    <ClCompile Include="spawn\lib_psa_getschedpolicy.c" />
+    <ClCompile Include="spawn\lib_psa_getsigmask.c" />
+    <ClCompile Include="spawn\lib_psa_getstacksize.c" />
+    <ClCompile Include="spawn\lib_psa_init.c" />
+    <ClCompile Include="spawn\lib_psa_setflags.c" />
+    <ClCompile Include="spawn\lib_psa_setschedparam.c" />
+    <ClCompile Include="spawn\lib_psa_setschedpolicy.c" />
+    <ClCompile Include="spawn\lib_psa_setsigmask.c" />
+    <ClCompile Include="spawn\lib_psa_setstacksize.c" />
+    <ClCompile Include="spawn\lib_psfa_addaction.c" />
+    <ClCompile Include="spawn\lib_psfa_addclose.c" />
+    <ClCompile Include="spawn\lib_psfa_adddup2.c" />
+    <ClCompile Include="spawn\lib_psfa_addopen.c" />
+    <ClCompile Include="spawn\lib_psfa_destroy.c" />
+    <ClCompile Include="spawn\lib_psfa_init.c" />
+    <ClCompile Include="stdio\lib_asprintf.c" />
+    <ClCompile Include="stdio\lib_clearerr.c" />
+    <ClCompile Include="stdio\lib_dprintf.c" />
+    <ClCompile Include="stdio\lib_fclose.c" />
+    <ClCompile Include="stdio\lib_feof.c" />
+    <ClCompile Include="stdio\lib_ferror.c" />
+    <ClCompile Include="stdio\lib_fflush.c" />
+    <ClCompile Include="stdio\lib_fgetc.c" />
+    <ClCompile Include="stdio\lib_fgetpos.c" />
+    <ClCompile Include="stdio\lib_fgets.c" />
+    <ClCompile Include="stdio\lib_fileno.c" />
+    <ClCompile Include="stdio\lib_fopen.c" />
+    <ClCompile Include="stdio\lib_fprintf.c" />
+    <ClCompile Include="stdio\lib_fputc.c" />
+    <ClCompile Include="stdio\lib_fputs.c" />
+    <ClCompile Include="stdio\lib_fread.c" />
+    <ClCompile Include="stdio\lib_freopen.c" />
+    <ClCompile Include="stdio\lib_fscanf.c" />
+    <ClCompile Include="stdio\lib_fseek.c" />
+    <ClCompile Include="stdio\lib_fseeko.c" />
+    <ClCompile Include="stdio\lib_fsetpos.c" />
+    <ClCompile Include="stdio\lib_ftell.c" />
+    <ClCompile Include="stdio\lib_ftello.c" />
+    <ClCompile Include="stdio\lib_fwrite.c" />
+    <ClCompile Include="stdio\lib_getc.c" />
+    <ClCompile Include="stdio\lib_getchar.c" />
+    <ClCompile Include="stdio\lib_getdelim.c" />
+    <ClCompile Include="stdio\lib_gets.c" />
+    <ClCompile Include="stdio\lib_gets_s.c" />
+    <ClCompile Include="stdio\lib_libfflush.c" />
+    <ClCompile Include="stdio\lib_libfgets.c" />
+    <ClCompile Include="stdio\lib_libflushall.c" />
+    <ClCompile Include="stdio\lib_libfread.c" />
+    <ClCompile Include="stdio\lib_libfwrite.c" />
+    <ClCompile Include="stdio\lib_libnoflush.c" />
+    <ClCompile Include="stdio\lib_libsnoflush.c" />
+    <ClCompile Include="stdio\lib_libsprintf.c" />
+    <ClCompile Include="stdio\lib_libvscanf.c" />
+    <ClCompile Include="stdio\lib_libvsprintf.c" />
+    <ClCompile Include="stdio\lib_lowoutstream.c" />
+    <ClCompile Include="stdio\lib_meminstream.c" />
+    <ClCompile Include="stdio\lib_memoutstream.c" />
+    <ClCompile Include="stdio\lib_memsistream.c" />
+    <ClCompile Include="stdio\lib_memsostream.c" />
+    <ClCompile Include="stdio\lib_nullinstream.c" />
+    <ClCompile Include="stdio\lib_nulloutstream.c" />
+    <ClCompile Include="stdio\lib_perror.c" />
+    <ClCompile Include="stdio\lib_printf.c" />
+    <ClCompile Include="stdio\lib_putc.c" />
+    <ClCompile Include="stdio\lib_putchar.c" />
+    <ClCompile Include="stdio\lib_puts.c" />
+    <ClCompile Include="stdio\lib_rawinstream.c" />
+    <ClCompile Include="stdio\lib_rawoutstream.c" />
+    <ClCompile Include="stdio\lib_rawsistream.c" />
+    <ClCompile Include="stdio\lib_rawsostream.c" />
+    <ClCompile Include="stdio\lib_rdflush.c" />
+    <ClCompile Include="stdio\lib_remove.c" />
+    <ClCompile Include="stdio\lib_rewind.c" />
+    <ClCompile Include="stdio\lib_scanf.c" />
+    <ClCompile Include="stdio\lib_setbuf.c" />
+    <ClCompile Include="stdio\lib_setvbuf.c" />
+    <ClCompile Include="stdio\lib_snprintf.c" />
+    <ClCompile Include="stdio\lib_sprintf.c" />
+    <ClCompile Include="stdio\lib_sscanf.c" />
+    <ClCompile Include="stdio\lib_stdinstream.c" />
+    <ClCompile Include="stdio\lib_stdoutstream.c" />
+    <ClCompile Include="stdio\lib_stdsistream.c" />
+    <ClCompile Include="stdio\lib_stdsostream.c" />
+    <ClCompile Include="stdio\lib_tempnam.c" />
+    <ClCompile Include="stdio\lib_tmpfile.c" />
+    <ClCompile Include="stdio\lib_tmpnam.c" />
+    <ClCompile Include="stdio\lib_ultoa_invert.c" />
+    <ClCompile Include="stdio\lib_ungetc.c" />
+    <ClCompile Include="stdio\lib_vasprintf.c" />
+    <ClCompile Include="stdio\lib_vdprintf.c" />
+    <ClCompile Include="stdio\lib_vfprintf.c" />
+    <ClCompile Include="stdio\lib_vfscanf.c" />
+    <ClCompile Include="stdio\lib_vprintf.c" />
+    <ClCompile Include="stdio\lib_vscanf.c" />
+    <ClCompile Include="stdio\lib_vsnprintf.c" />
+    <ClCompile Include="stdio\lib_vsprintf.c" />
+    <ClCompile Include="stdio\lib_vsscanf.c" />
+    <ClCompile Include="stdio\lib_wrflush.c" />
+    <ClCompile Include="stdio\lib_zeroinstream.c" />
+    <ClCompile Include="stdlib\lib_abort.c" />
+    <ClCompile Include="stdlib\lib_abs.c" />
+    <ClCompile Include="stdlib\lib_aligned_alloc.c" />
+    <ClCompile Include="stdlib\lib_atof.c" />
+    <ClCompile Include="stdlib\lib_atoi.c" />
+    <ClCompile Include="stdlib\lib_atol.c" />
+    <ClCompile Include="stdlib\lib_atoll.c" />
+    <ClCompile Include="stdlib\lib_bsearch.c" />
+    <ClCompile Include="stdlib\lib_checkbase.c" />
+    <ClCompile Include="stdlib\lib_div.c" />
+    <ClCompile Include="stdlib\lib_Exit.c" />
+    <ClCompile Include="stdlib\lib_itoa.c" />
+    <ClCompile Include="stdlib\lib_labs.c" />
+    <ClCompile Include="stdlib\lib_ldiv.c" />
+    <ClCompile Include="stdlib\lib_llabs.c" />
+    <ClCompile Include="stdlib\lib_lldiv.c" />
+    <ClCompile Include="stdlib\lib_mkdtemp.c" />
+    <ClCompile Include="stdlib\lib_mkstemp.c" />
+    <ClCompile Include="stdlib\lib_mktemp.c" />
+    <ClCompile Include="stdlib\lib_posix_memalign.c" />
+    <ClCompile Include="stdlib\lib_qsort.c" />
+    <ClCompile Include="stdlib\lib_rand.c" />
+    <ClCompile Include="stdlib\lib_realpath.c" />
+    <ClCompile Include="stdlib\lib_srand.c" />
+    <ClCompile Include="stdlib\lib_strtod.c" />
+    <ClCompile Include="stdlib\lib_strtof.c" />
+    <ClCompile Include="stdlib\lib_strtol.c" />
+    <ClCompile Include="stdlib\lib_strtold.c" />
+    <ClCompile Include="stdlib\lib_strtoll.c" />
+    <ClCompile Include="stdlib\lib_strtoul.c" />
+    <ClCompile Include="stdlib\lib_strtoull.c" />
+    <ClCompile Include="string\lib_anbstr2cstr.c" />
+    <ClCompile Include="string\lib_ancstr2bstr.c" />
+    <ClCompile Include="string\lib_bmem2cmem.c" />
+    <ClCompile Include="string\lib_bstrnlen.c" />
+    <ClCompile Include="string\lib_cmem2bmem.c" />
+    <ClCompile Include="string\lib_explicit_bzero.c" />
+    <ClCompile Include="string\lib_ffs.c" />
+    <ClCompile Include="string\lib_ffsl.c" />
+    <ClCompile Include="string\lib_ffsll.c" />
+    <ClCompile Include="string\lib_fls.c" />
+    <ClCompile Include="string\lib_flsl.c" />
+    <ClCompile Include="string\lib_flsll.c" />
+    <ClCompile Include="string\lib_index.c" />
+    <ClCompile Include="string\lib_isbasedigit.c" />
+    <ClCompile Include="string\lib_memccpy.c" />
+    <ClCompile Include="string\lib_memchr.c" />
+    <ClCompile Include="string\lib_memcmp.c" />
+    <ClCompile Include="string\lib_memcpy.c" />
+    <ClCompile Include="string\lib_memmove.c" />
+    <ClCompile Include="string\lib_memrchr.c" />
+    <ClCompile Include="string\lib_memset.c" />
+    <ClCompile Include="string\lib_nbstr2cstr.c" />
+    <ClCompile Include="string\lib_ncstr2bstr.c" />
+    <ClCompile Include="string\lib_popcount.c" />
+    <ClCompile Include="string\lib_popcountl.c" />
+    <ClCompile Include="string\lib_popcountll.c" />
+    <ClCompile Include="string\lib_rindex.c" />
+    <ClCompile Include="string\lib_skipspace.c" />
+    <ClCompile Include="string\lib_stpcpy.c" />
+    <ClCompile Include="string\lib_stpncpy.c" />
+    <ClCompile Include="string\lib_strcasecmp.c" />
+    <ClCompile Include="string\lib_strcasestr.c" />
+    <ClCompile Include="string\lib_strcat.c" />
+    <ClCompile Include="string\lib_strchr.c" />
+    <ClCompile Include="string\lib_strcmp.c" />
+    <ClCompile Include="string\lib_strcpy.c" />
+    <ClCompile Include="string\lib_strcspn.c" />
+    <ClCompile Include="string\lib_strdup.c" />
+    <ClCompile Include="string\lib_strerror.c" />
+    <ClCompile Include="string\lib_strerrorr.c" />
+    <ClCompile Include="string\lib_strlcpy.c" />
+    <ClCompile Include="string\lib_strlen.c" />
+    <ClCompile Include="string\lib_strncasecmp.c" />
+    <ClCompile Include="string\lib_strncat.c" />
+    <ClCompile Include="string\lib_strncmp.c" />
+    <ClCompile Include="string\lib_strncpy.c" />
+    <ClCompile Include="string\lib_strndup.c" />
+    <ClCompile Include="string\lib_strnlen.c" />
+    <ClCompile Include="string\lib_strpbrk.c" />
+    <ClCompile Include="string\lib_strrchr.c" />
+    <ClCompile Include="string\lib_strsep.c" />
+    <ClCompile Include="string\lib_strsignal.c" />
+    <ClCompile Include="string\lib_strspn.c" />
+    <ClCompile Include="string\lib_strstr.c" />
+    <ClCompile Include="string\lib_strtok.c" />
+    <ClCompile Include="string\lib_strtokr.c" />
+    <ClCompile Include="symtab\symtab_findbyname.c" />
+    <ClCompile Include="symtab\symtab_findbyvalue.c" />
+    <ClCompile Include="symtab\symtab_findorderedbyname.c" />
+    <ClCompile Include="symtab\symtab_sortbyname.c" />
+    <ClCompile Include="syslog\lib_setlogmask.c" />
+    <ClCompile Include="syslog\lib_syslog.c" />
+    <ClCompile Include="time\lib_asctime.c" />
+    <ClCompile Include="time\lib_asctimer.c" />
+    <ClCompile Include="time\lib_calendar2utc.c" />
+    <ClCompile Include="time\lib_ctime.c" />
+    <ClCompile Include="time\lib_ctimer.c" />
+    <ClCompile Include="time\lib_dayofweek.c" />
+    <ClCompile Include="time\lib_daysbeforemonth.c" />
+    <ClCompile Include="time\lib_difftime.c" />
+    <ClCompile Include="time\lib_gethrtime.c" />
+    <ClCompile Include="time\lib_gettimeofday.c" />
+    <ClCompile Include="time\lib_gmtime.c" />
+    <ClCompile Include="time\lib_gmtimer.c" />
+    <ClCompile Include="time\lib_isleapyear.c" />
+    <ClCompile Include="time\lib_mktime.c" />
+    <ClCompile Include="time\lib_nanosleep.c" />
+    <ClCompile Include="time\lib_settimeofday.c" />
+    <ClCompile Include="time\lib_strftime.c" />
+    <ClCompile Include="time\lib_time.c" />
+    <ClCompile Include="time\lib_timespec_get.c" />
+    <ClCompile Include="tls\tls_getinfo.c" />
+    <ClCompile Include="tls\tls_getvalue.c" />
+    <ClCompile Include="tls\tls_setvalue.c" />
+    <ClCompile Include="uio\lib_readv.c" />
+    <ClCompile Include="uio\lib_writev.c" />
+    <ClCompile Include="unistd\lib_access.c" />
+    <ClCompile Include="unistd\lib_alarm.c" />
+    <ClCompile Include="unistd\lib_chdir.c" />
+    <ClCompile Include="unistd\lib_daemon.c" />
+    <ClCompile Include="unistd\lib_fstatvfs.c" />
+    <ClCompile Include="unistd\lib_futimens.c" />
+    <ClCompile Include="unistd\lib_futimes.c" />
+    <ClCompile Include="unistd\lib_getcwd.c" />
+    <ClCompile Include="unistd\lib_getegid.c" />
+    <ClCompile Include="unistd\lib_geteuid.c" />
+    <ClCompile Include="unistd\lib_getgid.c" />
+    <ClCompile Include="unistd\lib_gethostname.c" />
+    <ClCompile Include="unistd\lib_getopt.c" />
+    <ClCompile Include="unistd\lib_getoptargp.c" />
+    <ClCompile Include="unistd\lib_getoptindp.c" />
+    <ClCompile Include="unistd\lib_getoptoptp.c" />
+    <ClCompile Include="unistd\lib_getpriority.c" />
+    <ClCompile Include="unistd\lib_getrlimit.c" />
+    <ClCompile Include="unistd\lib_getrusage.c" />
+    <ClCompile Include="unistd\lib_gettid.c" />
+    <ClCompile Include="unistd\lib_getuid.c" />
+    <ClCompile Include="unistd\lib_pathconf.c" />
+    <ClCompile Include="unistd\lib_restoredir.c" />
+    <ClCompile Include="unistd\lib_setegid.c" />
+    <ClCompile Include="unistd\lib_seteuid.c" />
+    <ClCompile Include="unistd\lib_setgid.c" />
+    <ClCompile Include="unistd\lib_sethostname.c" />
+    <ClCompile Include="unistd\lib_setpriority.c" />
+    <ClCompile Include="unistd\lib_setregid.c" />
+    <ClCompile Include="unistd\lib_setreuid.c" />
+    <ClCompile Include="unistd\lib_setrlimit.c" />
+    <ClCompile Include="unistd\lib_setuid.c" />
+    <ClCompile Include="unistd\lib_sleep.c" />
+    <ClCompile Include="unistd\lib_statvfs.c" />
+    <ClCompile Include="unistd\lib_swab.c" />
+    <ClCompile Include="unistd\lib_sysconf.c" />
+    <ClCompile Include="unistd\lib_truncate.c" />
+    <ClCompile Include="unistd\lib_usleep.c" />
+    <ClCompile Include="unistd\lib_utimes.c" />
+    <ClCompile Include="uuid\lib_uuid_compare.c" />
+    <ClCompile Include="uuid\lib_uuid_create.c" />
+    <ClCompile Include="uuid\lib_uuid_create_nil.c" />
+    <ClCompile Include="uuid\lib_uuid_equal.c" />
+    <ClCompile Include="uuid\lib_uuid_from_string.c" />
+    <ClCompile Include="uuid\lib_uuid_hash.c" />
+    <ClCompile Include="uuid\lib_uuid_is_nil.c" />
+    <ClCompile Include="uuid\lib_uuid_stream.c" />
+    <ClCompile Include="uuid\lib_uuid_to_string.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="grp\lib_grp.h" />
+    <ClInclude Include="pwd\lib_pwd.h" />
+    <ClInclude Include="stdio\lib_dtoa_engine.h" />
+    <ClInclude Include="stdio\lib_ultoa_invert.h" />
+    <ClInclude Include="syslog\syslog.h" />
+    <ClInclude Include="tls\tls.h" />
+  </ItemGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

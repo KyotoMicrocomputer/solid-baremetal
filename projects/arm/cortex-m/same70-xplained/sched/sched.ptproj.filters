@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="clock\clock.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_abstime2ticks.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_getres.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_gettime.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_initialize.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_settime.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_systime_ticks.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_systime_timespec.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_ticks2time.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_time2ticks.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_timespec_add.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="clock\clock_timespec_subtract.c">
+      <Filter>clock</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_clearenv.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_dup.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_findvar.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_foreach.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_getenv.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_getenvironptr.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_putenv.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_release.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_removevar.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_setenv.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="environ\env_unsetenv.c">
+      <Filter>environ</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_create.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_find.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_foreachchild.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_join.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_killchildren.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_leave.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_setupidlefiles.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_setupstreams.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_setuptaskfiles.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_signal.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_tlsalloc.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_tlsfree.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="group\group_waiter.c">
+      <Filter>group</Filter>
+    </ClCompile>
+    <ClCompile Include="init\nx_bringup.c">
+      <Filter>init</Filter>
+    </ClCompile>
+    <ClCompile Include="init\nx_start.c">
+      <Filter>init</Filter>
+    </ClCompile>
+    <ClCompile Include="irq\irq_attach.c">
+      <Filter>irq</Filter>
+    </ClCompile>
+    <ClCompile Include="irq\irq_dispatch.c">
+      <Filter>irq</Filter>
+    </ClCompile>
+    <ClCompile Include="irq\irq_initialize.c">
+      <Filter>irq</Filter>
+    </ClCompile>
+    <ClCompile Include="irq\irq_unexpectedisr.c">
+      <Filter>irq</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_desclose.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_descreate.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_getattr.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_initialize.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_msgfree.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_msgqalloc.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_msgqfree.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_notify.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_rcvinternal.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_receive.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_recover.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_release.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_send.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_setattr.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_sndinternal.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_timedreceive.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_timedsend.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_waitirq.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_cancel.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_completejoin.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_condbroadcast.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_condclockwait.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_condsignal.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_condwait.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_create.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_detach.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_exit.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_findjoininfo.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_getschedparam.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_initialize.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_join.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_kill.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_mutex.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_mutexconsistent.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_mutexdestroy.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_mutexinconsistent.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_mutexinit.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_mutextimedlock.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_mutextrylock.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_mutexunlock.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_release.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_setschedparam.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_setschedprio.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="pthread\pthread_sigmask.c">
+      <Filter>pthread</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_addblocked.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_addprioritized.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_addreadytorun.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_foreach.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_getfiles.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_getparam.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_getscheduler.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_getsockets.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_getstreams.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_gettcb.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_get_stackinfo.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_idletask.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_lock.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_lockcount.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_mergepending.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_mergeprioritized.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_processtimer.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_releasetcb.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_removeblocked.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_removereadytorun.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_resumescheduler.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_roundrobin.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_rrgetinterval.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_self.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_setparam.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_setpriority.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_setscheduler.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_unlock.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_verifytcb.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_waitpid.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="sched\sched_yield.c">
+      <Filter>sched</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_clockwait.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_destroy.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_post.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_recover.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_reset.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_tickwait.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_timedwait.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_timeout.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_trywait.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_wait.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="semaphore\sem_waitirq.c">
+      <Filter>semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_action.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_allocpendingsigaction.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_cleanup.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_deliver.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_dispatch.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_findaction.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_initialize.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_kill.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_lowest.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_nanosleep.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_notification.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_pause.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_pending.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_ppoll.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_procmask.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_pselect.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_queue.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_releasependingsigaction.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_releasependingsignal.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_removependingsignal.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_sleep.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_suspend.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_timedwait.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_unmaskpendingsignal.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_usleep.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="signal\sig_waitinfo.c">
+      <Filter>signal</Filter>
+    </ClCompile>
+    <ClCompile Include="task\exit.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_activate.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_cancelpt.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_create.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_delete.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_exit.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_exithook.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_getgroup.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_getpid.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_init.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_prctl.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_recover.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_restart.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_setcancelstate.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_setup.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_spawn.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_spawnparms.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_start.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_terminate.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="task\task_vfork.c">
+      <Filter>task</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_create.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_delete.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_getitimer.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_getoverrun.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_gettime.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_initialize.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_release.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_setitimer.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="timer\timer_settime.c">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="wdog\wd_cancel.c">
+      <Filter>wdog</Filter>
+    </ClCompile>
+    <ClCompile Include="wdog\wd_gettime.c">
+      <Filter>wdog</Filter>
+    </ClCompile>
+    <ClCompile Include="wdog\wd_initialize.c">
+      <Filter>wdog</Filter>
+    </ClCompile>
+    <ClCompile Include="wdog\wd_recover.c">
+      <Filter>wdog</Filter>
+    </ClCompile>
+    <ClCompile Include="wdog\wd_start.c">
+      <Filter>wdog</Filter>
+    </ClCompile>
+    <ClCompile Include="wqueue\kwork_cancel.c">
+      <Filter>wqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="wqueue\kwork_hpthread.c">
+      <Filter>wqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="wqueue\kwork_process.c">
+      <Filter>wqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="wqueue\kwork_queue.c">
+      <Filter>wqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="wqueue\kwork_signal.c">
+      <Filter>wqueue</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clock\clock.h">
+      <Filter>clock</Filter>
+    </ClInclude>
+    <ClInclude Include="clock\clock_timekeeping.h">
+      <Filter>clock</Filter>
+    </ClInclude>
+    <ClInclude Include="environ\environ.h">
+      <Filter>environ</Filter>
+    </ClInclude>
+    <ClInclude Include="group\group.h">
+      <Filter>group</Filter>
+    </ClInclude>
+    <ClInclude Include="init\init.h">
+      <Filter>init</Filter>
+    </ClInclude>
+    <ClInclude Include="irq\irq.h">
+      <Filter>irq</Filter>
+    </ClInclude>
+    <ClInclude Include="mqueue\mqueue.h">
+      <Filter>mqueue</Filter>
+    </ClInclude>
+    <ClInclude Include="pthread\pthread.h">
+      <Filter>pthread</Filter>
+    </ClInclude>
+    <ClInclude Include="sched\sched.h">
+      <Filter>sched</Filter>
+    </ClInclude>
+    <ClInclude Include="semaphore\semaphore.h">
+      <Filter>semaphore</Filter>
+    </ClInclude>
+    <ClInclude Include="signal\signal.h">
+      <Filter>signal</Filter>
+    </ClInclude>
+    <ClInclude Include="task\spawn.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="task\task.h">
+      <Filter>task</Filter>
+    </ClInclude>
+    <ClInclude Include="timer\timer.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="wdog\wdog.h">
+      <Filter>wdog</Filter>
+    </ClInclude>
+    <ClInclude Include="wqueue\wqueue.h">
+      <Filter>wqueue</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="clock">
+      <UniqueIdentifier>{558ca6f8-b8c5-4161-b82f-15ef890c26f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="environ">
+      <UniqueIdentifier>{f0476052-4f90-4fde-90f4-c914c2eddfde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="group">
+      <UniqueIdentifier>{6e6e5986-fed0-45a5-919b-9d9e6ac38779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="init">
+      <UniqueIdentifier>{e8968fb3-432a-4779-aafc-b47157e3a358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="irq">
+      <UniqueIdentifier>{f4bc62dc-154c-43df-a01b-41dd839c056b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mqueue">
+      <UniqueIdentifier>{c78e970e-defc-4f81-9a11-3f8c6cbaf24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pthread">
+      <UniqueIdentifier>{29af6992-4fbe-49d7-b376-7b1203040555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sched">
+      <UniqueIdentifier>{ebeccc97-da3a-4652-ab47-9090ba9cf715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="semaphore">
+      <UniqueIdentifier>{2bfb3214-a82a-4e37-b43f-dab5733c5430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="signal">
+      <UniqueIdentifier>{e44966a0-70a9-49bb-bb11-2411f2360169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task">
+      <UniqueIdentifier>{d5af0b63-644b-4d2d-a146-b9abcea0ebc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{63032314-47d8-4ecc-a841-e7e29d6ee2f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wdog">
+      <UniqueIdentifier>{fd23f4ef-2a7d-4532-b47b-b630fc228758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wqueue">
+      <UniqueIdentifier>{f7a5f2ec-4123-47e9-b0e7-d40e5c560de4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

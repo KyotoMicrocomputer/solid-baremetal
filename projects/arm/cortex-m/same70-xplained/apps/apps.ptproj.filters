@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="builtin\builtin_list.h">
+      <Filter>builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="builtin\builtin_proto.h">
+      <Filter>builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="fsutils\mkfatfs\fat32.h">
+      <Filter>fsutils\mkfatfs</Filter>
+    </ClInclude>
+    <ClInclude Include="fsutils\mkfatfs\mkfatfs.h">
+      <Filter>fsutils\mkfatfs</Filter>
+    </ClInclude>
+    <ClInclude Include="nshlib\nsh.h">
+      <Filter>nshlib</Filter>
+    </ClInclude>
+    <ClInclude Include="nshlib\nsh_console.h">
+      <Filter>nshlib</Filter>
+    </ClInclude>
+    <ClInclude Include="nshlib\nsh_romfsimg.h">
+      <Filter>nshlib</Filter>
+    </ClInclude>
+    <ClInclude Include="system\i2c\i2ctool.h">
+      <Filter>system\i2c</Filter>
+    </ClInclude>
+    <ClInclude Include="system\readline\readline.h">
+      <Filter>system\readline</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="builtin\builtin_list.c">
+      <Filter>builtin</Filter>
+    </ClCompile>
+    <ClCompile Include="builtin\exec_builtin.c">
+      <Filter>builtin</Filter>
+    </ClCompile>
+    <ClCompile Include="fsutils\mkfatfs\configfat.c">
+      <Filter>fsutils\mkfatfs</Filter>
+    </ClCompile>
+    <ClCompile Include="fsutils\mkfatfs\mkfatfs.c">
+      <Filter>fsutils\mkfatfs</Filter>
+    </ClCompile>
+    <ClCompile Include="fsutils\mkfatfs\writefat.c">
+      <Filter>fsutils\mkfatfs</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_builtin.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_command.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_console.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_consolemain.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_dbgcmds.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_ddcmd.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_envcmds.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_fscmds.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_fsutils.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_init.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_mmcmds.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_mntcmds.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_parse.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_proccmds.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_script.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_session.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_syscmds.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_system.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_test.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="nshlib\nsh_timcmds.c">
+      <Filter>nshlib</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\board\dummy.c">
+      <Filter>platform\board</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_bus.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_common.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_dev.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_devif.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_dump.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_get.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_hexdump.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_main.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_set.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\i2c\i2c_verf.c">
+      <Filter>system\i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="system\nsh\nsh_main.c">
+      <Filter>system\nsh</Filter>
+    </ClCompile>
+    <ClCompile Include="system\nsh\sh_main.c">
+      <Filter>system\nsh</Filter>
+    </ClCompile>
+    <ClCompile Include="system\ramtest\ramtest.c">
+      <Filter>system\ramtest</Filter>
+    </ClCompile>
+    <ClCompile Include="system\readline\readline.c">
+      <Filter>system\readline</Filter>
+    </ClCompile>
+    <ClCompile Include="system\readline\readline_common.c">
+      <Filter>system\readline</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="builtin">
+      <UniqueIdentifier>{50184814-79fe-4ddb-a4b5-c3bd8fa4be85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fsutils">
+      <UniqueIdentifier>{9035a8c2-7a04-4447-a81a-2ae55d9cf7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fsutils\mkfatfs">
+      <UniqueIdentifier>{90f532bb-4bd9-405e-8ead-8f259f1c8838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nshlib">
+      <UniqueIdentifier>{018a685c-fed2-4cb2-aa49-e1e2533bc271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{b8e4709c-6359-48f1-bf08-809270e0447b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\board">
+      <UniqueIdentifier>{db94af6a-5616-4591-a99d-52ef3e08f9c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{be642404-0390-40f2-bde3-4104bd112f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\i2c">
+      <UniqueIdentifier>{180aa9b3-6341-4563-ac74-23ba25e536cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\nsh">
+      <UniqueIdentifier>{4dec12cf-4f3e-4fe0-8fcc-66cb461a25c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ramtest">
+      <UniqueIdentifier>{963cb81b-032f-4627-b955-90573cd03212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\readline">
+      <UniqueIdentifier>{77062a0d-20b8-4bf4-a960-c68e9a7c18a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

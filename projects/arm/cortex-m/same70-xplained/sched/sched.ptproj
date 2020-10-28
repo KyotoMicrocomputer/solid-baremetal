@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_clang|SOLID_ARM">
+      <Configuration>Debug_clang</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_tasan|SOLID_ARM">
+      <Configuration>Debug_tasan</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_tracepoint|SOLID_ARM">
+      <Configuration>Debug_tracepoint</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_clang|SOLID_ARM">
+      <Configuration>Release_clang</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|SOLID_ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|SOLID_ARM">
+      <Configuration>Release</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clock\clock.c" />
+    <ClCompile Include="clock\clock_abstime2ticks.c" />
+    <ClCompile Include="clock\clock_getres.c" />
+    <ClCompile Include="clock\clock_gettime.c" />
+    <ClCompile Include="clock\clock_initialize.c" />
+    <ClCompile Include="clock\clock_settime.c" />
+    <ClCompile Include="clock\clock_systime_ticks.c" />
+    <ClCompile Include="clock\clock_systime_timespec.c" />
+    <ClCompile Include="clock\clock_ticks2time.c" />
+    <ClCompile Include="clock\clock_time2ticks.c" />
+    <ClCompile Include="clock\clock_timespec_add.c" />
+    <ClCompile Include="clock\clock_timespec_subtract.c" />
+    <ClCompile Include="environ\env_clearenv.c" />
+    <ClCompile Include="environ\env_dup.c" />
+    <ClCompile Include="environ\env_findvar.c" />
+    <ClCompile Include="environ\env_foreach.c" />
+    <ClCompile Include="environ\env_getenv.c" />
+    <ClCompile Include="environ\env_getenvironptr.c" />
+    <ClCompile Include="environ\env_putenv.c" />
+    <ClCompile Include="environ\env_release.c" />
+    <ClCompile Include="environ\env_removevar.c" />
+    <ClCompile Include="environ\env_setenv.c" />
+    <ClCompile Include="environ\env_unsetenv.c" />
+    <ClCompile Include="group\group_create.c" />
+    <ClCompile Include="group\group_find.c" />
+    <ClCompile Include="group\group_foreachchild.c" />
+    <ClCompile Include="group\group_join.c" />
+    <ClCompile Include="group\group_killchildren.c" />
+    <ClCompile Include="group\group_leave.c" />
+    <ClCompile Include="group\group_setupidlefiles.c" />
+    <ClCompile Include="group\group_setupstreams.c" />
+    <ClCompile Include="group\group_setuptaskfiles.c" />
+    <ClCompile Include="group\group_signal.c" />
+    <ClCompile Include="group\group_tlsalloc.c" />
+    <ClCompile Include="group\group_tlsfree.c" />
+    <ClCompile Include="group\group_waiter.c" />
+    <ClCompile Include="init\nx_bringup.c" />
+    <ClCompile Include="init\nx_start.c" />
+    <ClCompile Include="irq\irq_attach.c" />
+    <ClCompile Include="irq\irq_dispatch.c" />
+    <ClCompile Include="irq\irq_initialize.c" />
+    <ClCompile Include="irq\irq_unexpectedisr.c" />
+    <ClCompile Include="mqueue\mq_desclose.c" />
+    <ClCompile Include="mqueue\mq_descreate.c" />
+    <ClCompile Include="mqueue\mq_getattr.c" />
+    <ClCompile Include="mqueue\mq_initialize.c" />
+    <ClCompile Include="mqueue\mq_msgfree.c" />
+    <ClCompile Include="mqueue\mq_msgqalloc.c" />
+    <ClCompile Include="mqueue\mq_msgqfree.c" />
+    <ClCompile Include="mqueue\mq_notify.c" />
+    <ClCompile Include="mqueue\mq_rcvinternal.c" />
+    <ClCompile Include="mqueue\mq_receive.c" />
+    <ClCompile Include="mqueue\mq_recover.c" />
+    <ClCompile Include="mqueue\mq_release.c" />
+    <ClCompile Include="mqueue\mq_send.c" />
+    <ClCompile Include="mqueue\mq_setattr.c" />
+    <ClCompile Include="mqueue\mq_sndinternal.c" />
+    <ClCompile Include="mqueue\mq_timedreceive.c" />
+    <ClCompile Include="mqueue\mq_timedsend.c" />
+    <ClCompile Include="mqueue\mq_waitirq.c" />
+    <ClCompile Include="pthread\pthread_cancel.c" />
+    <ClCompile Include="pthread\pthread_completejoin.c" />
+    <ClCompile Include="pthread\pthread_condbroadcast.c" />
+    <ClCompile Include="pthread\pthread_condclockwait.c" />
+    <ClCompile Include="pthread\pthread_condsignal.c" />
+    <ClCompile Include="pthread\pthread_condwait.c" />
+    <ClCompile Include="pthread\pthread_create.c" />
+    <ClCompile Include="pthread\pthread_detach.c" />
+    <ClCompile Include="pthread\pthread_exit.c" />
+    <ClCompile Include="pthread\pthread_findjoininfo.c" />
+    <ClCompile Include="pthread\pthread_getschedparam.c" />
+    <ClCompile Include="pthread\pthread_initialize.c" />
+    <ClCompile Include="pthread\pthread_join.c" />
+    <ClCompile Include="pthread\pthread_kill.c" />
+    <ClCompile Include="pthread\pthread_mutex.c" />
+    <ClCompile Include="pthread\pthread_mutexconsistent.c" />
+    <ClCompile Include="pthread\pthread_mutexdestroy.c" />
+    <ClCompile Include="pthread\pthread_mutexinconsistent.c" />
+    <ClCompile Include="pthread\pthread_mutexinit.c" />
+    <ClCompile Include="pthread\pthread_mutextimedlock.c" />
+    <ClCompile Include="pthread\pthread_mutextrylock.c" />
+    <ClCompile Include="pthread\pthread_mutexunlock.c" />
+    <ClCompile Include="pthread\pthread_release.c" />
+    <ClCompile Include="pthread\pthread_setschedparam.c" />
+    <ClCompile Include="pthread\pthread_setschedprio.c" />
+    <ClCompile Include="pthread\pthread_sigmask.c" />
+    <ClCompile Include="sched\sched_addblocked.c" />
+    <ClCompile Include="sched\sched_addprioritized.c" />
+    <ClCompile Include="sched\sched_addreadytorun.c" />
+    <ClCompile Include="sched\sched_foreach.c" />
+    <ClCompile Include="sched\sched_getfiles.c" />
+    <ClCompile Include="sched\sched_getparam.c" />
+    <ClCompile Include="sched\sched_getscheduler.c" />
+    <ClCompile Include="sched\sched_getsockets.c" />
+    <ClCompile Include="sched\sched_getstreams.c" />
+    <ClCompile Include="sched\sched_gettcb.c" />
+    <ClCompile Include="sched\sched_get_stackinfo.c" />
+    <ClCompile Include="sched\sched_idletask.c" />
+    <ClCompile Include="sched\sched_lock.c" />
+    <ClCompile Include="sched\sched_lockcount.c" />
+    <ClCompile Include="sched\sched_mergepending.c" />
+    <ClCompile Include="sched\sched_mergeprioritized.c" />
+    <ClCompile Include="sched\sched_processtimer.c" />
+    <ClCompile Include="sched\sched_releasetcb.c" />
+    <ClCompile Include="sched\sched_removeblocked.c" />
+    <ClCompile Include="sched\sched_removereadytorun.c" />
+    <ClCompile Include="sched\sched_resumescheduler.c" />
+    <ClCompile Include="sched\sched_roundrobin.c" />
+    <ClCompile Include="sched\sched_rrgetinterval.c" />
+    <ClCompile Include="sched\sched_self.c" />
+    <ClCompile Include="sched\sched_setparam.c" />
+    <ClCompile Include="sched\sched_setpriority.c" />
+    <ClCompile Include="sched\sched_setscheduler.c" />
+    <ClCompile Include="sched\sched_unlock.c" />
+    <ClCompile Include="sched\sched_verifytcb.c" />
+    <ClCompile Include="sched\sched_waitpid.c" />
+    <ClCompile Include="sched\sched_yield.c" />
+    <ClCompile Include="semaphore\sem_clockwait.c" />
+    <ClCompile Include="semaphore\sem_destroy.c" />
+    <ClCompile Include="semaphore\sem_post.c" />
+    <ClCompile Include="semaphore\sem_recover.c" />
+    <ClCompile Include="semaphore\sem_reset.c" />
+    <ClCompile Include="semaphore\sem_tickwait.c" />
+    <ClCompile Include="semaphore\sem_timedwait.c" />
+    <ClCompile Include="semaphore\sem_timeout.c" />
+    <ClCompile Include="semaphore\sem_trywait.c" />
+    <ClCompile Include="semaphore\sem_wait.c" />
+    <ClCompile Include="semaphore\sem_waitirq.c" />
+    <ClCompile Include="signal\sig_action.c" />
+    <ClCompile Include="signal\sig_allocpendingsigaction.c" />
+    <ClCompile Include="signal\sig_cleanup.c" />
+    <ClCompile Include="signal\sig_deliver.c" />
+    <ClCompile Include="signal\sig_dispatch.c" />
+    <ClCompile Include="signal\sig_findaction.c" />
+    <ClCompile Include="signal\sig_initialize.c" />
+    <ClCompile Include="signal\sig_kill.c" />
+    <ClCompile Include="signal\sig_lowest.c" />
+    <ClCompile Include="signal\sig_nanosleep.c" />
+    <ClCompile Include="signal\sig_notification.c" />
+    <ClCompile Include="signal\sig_pause.c" />
+    <ClCompile Include="signal\sig_pending.c" />
+    <ClCompile Include="signal\sig_ppoll.c" />
+    <ClCompile Include="signal\sig_procmask.c" />
+    <ClCompile Include="signal\sig_pselect.c" />
+    <ClCompile Include="signal\sig_queue.c" />
+    <ClCompile Include="signal\sig_releasependingsigaction.c" />
+    <ClCompile Include="signal\sig_releasependingsignal.c" />
+    <ClCompile Include="signal\sig_removependingsignal.c" />
+    <ClCompile Include="signal\sig_sleep.c" />
+    <ClCompile Include="signal\sig_suspend.c" />
+    <ClCompile Include="signal\sig_timedwait.c" />
+    <ClCompile Include="signal\sig_unmaskpendingsignal.c" />
+    <ClCompile Include="signal\sig_usleep.c" />
+    <ClCompile Include="signal\sig_waitinfo.c" />
+    <ClCompile Include="task\exit.c" />
+    <ClCompile Include="task\task_activate.c" />
+    <ClCompile Include="task\task_cancelpt.c" />
+    <ClCompile Include="task\task_create.c" />
+    <ClCompile Include="task\task_delete.c" />
+    <ClCompile Include="task\task_exit.c" />
+    <ClCompile Include="task\task_exithook.c" />
+    <ClCompile Include="task\task_getgroup.c" />
+    <ClCompile Include="task\task_getpid.c" />
+    <ClCompile Include="task\task_init.c" />
+    <ClCompile Include="task\task_prctl.c" />
+    <ClCompile Include="task\task_recover.c" />
+    <ClCompile Include="task\task_restart.c" />
+    <ClCompile Include="task\task_setcancelstate.c" />
+    <ClCompile Include="task\task_setup.c" />
+    <ClCompile Include="task\task_spawn.c" />
+    <ClCompile Include="task\task_spawnparms.c" />
+    <ClCompile Include="task\task_start.c" />
+    <ClCompile Include="task\task_terminate.c" />
+    <ClCompile Include="task\task_vfork.c" />
+    <ClCompile Include="timer\timer_create.c" />
+    <ClCompile Include="timer\timer_delete.c" />
+    <ClCompile Include="timer\timer_getitimer.c" />
+    <ClCompile Include="timer\timer_getoverrun.c" />
+    <ClCompile Include="timer\timer_gettime.c" />
+    <ClCompile Include="timer\timer_initialize.c" />
+    <ClCompile Include="timer\timer_release.c" />
+    <ClCompile Include="timer\timer_setitimer.c" />
+    <ClCompile Include="timer\timer_settime.c" />
+    <ClCompile Include="wdog\wd_cancel.c" />
+    <ClCompile Include="wdog\wd_gettime.c" />
+    <ClCompile Include="wdog\wd_initialize.c" />
+    <ClCompile Include="wdog\wd_recover.c" />
+    <ClCompile Include="wdog\wd_start.c" />
+    <ClCompile Include="wqueue\kwork_cancel.c" />
+    <ClCompile Include="wqueue\kwork_hpthread.c" />
+    <ClCompile Include="wqueue\kwork_process.c" />
+    <ClCompile Include="wqueue\kwork_queue.c" />
+    <ClCompile Include="wqueue\kwork_signal.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clock\clock.h" />
+    <ClInclude Include="clock\clock_timekeeping.h" />
+    <ClInclude Include="environ\environ.h" />
+    <ClInclude Include="group\group.h" />
+    <ClInclude Include="init\init.h" />
+    <ClInclude Include="irq\irq.h" />
+    <ClInclude Include="mqueue\mqueue.h" />
+    <ClInclude Include="pthread\pthread.h" />
+    <ClInclude Include="sched\sched.h" />
+    <ClInclude Include="semaphore\semaphore.h" />
+    <ClInclude Include="signal\signal.h" />
+    <ClInclude Include="task\spawn.h" />
+    <ClInclude Include="task\task.h" />
+    <ClInclude Include="timer\timer.h" />
+    <ClInclude Include="wdog\wdog.h" />
+    <ClInclude Include="wqueue\wqueue.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{65c7ebc4-6b6a-4cc5-958e-b0c79390895c}</ProjectGuid>
+    <ProjectName>libsched</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeGCC_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeGCC_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)$(SolutionName).props" Condition="exists('$(SolutionDir)$(SolutionName).props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+    <EXEGCC_Core>Cortex-M7</EXEGCC_Core>
+    <EXEGCC_VFP>FPv5-DP-D16_hard</EXEGCC_VFP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'">
+    <EnableAddressSanitizer>true</EnableAddressSanitizer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+    <EXEGCC_Core>Cortex-M7</EXEGCC_Core>
+    <EXEGCC_VFP>FPv5-DP-D16_hard</EXEGCC_VFP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>__KERNEL__</exeGCC_PreprocessorDefinitions>
+      <AdditionalOptions>-fno-builtin  -Wall -Wstrict-prototypes -Wshadow -Wundef -fno-strict-aliasing -Os -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard </AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions> -v %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>USE_TASAN;%(exeGCC_PreprocessorDefinitions)</exeGCC_PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>USE_TRACE_POINT;%(exeGCC_PreprocessorDefinitions)</exeGCC_PreprocessorDefinitions>
+      <AdditionalOptions>-finstrument-functions %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O2</exeGCC_Optimization>
+      <exeClang_Optimization>O2</exeClang_Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>Os</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <AdditionalOptions>-Wshadow -Wundef -fno-strict-aliasing -fno-builtin -Wstrict-prototypes %(AdditionalOptions)</AdditionalOptions>
+      <exeGCC_PreprocessorDefinitions>__KERNEL__</exeGCC_PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O2</exeGCC_Optimization>
+      <exeClang_Optimization>O2</exeClang_Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

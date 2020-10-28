@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <PartnerDebugEngineCfgDirectory>$(SolutionDir)partner</PartnerDebugEngineCfgDirectory>
+    <PartnerDebugEngineInitMcrDirectory>$(SolutionDir)partner</PartnerDebugEngineInitMcrDirectory>
+    <PartnerDebugEngineLoadingOption>LoadSymbolOnly</PartnerDebugEngineLoadingOption>
+    <DebuggerFlavor>PartnerDebugEngine(SOLID_v7A_ARM)</DebuggerFlavor>
+    <PartnerLauncherProjectDirectory>$(SolutionDir)partner</PartnerLauncherProjectDirectory>
+    <PartnerLauncherInitMcrDirectory>$(SolutionDir)partner</PartnerLauncherInitMcrDirectory>
+    <PartnerDebugEngineSWBreakpointOption>LateBinding</PartnerDebugEngineSWBreakpointOption>
+    <PartnerDebugEngineEntryPoint>main</PartnerDebugEngineEntryPoint>
+    <PartnerDebugEngineArguments>-DEBUG_CACHE_OFF</PartnerDebugEngineArguments>
+    <PartnerLauncherArguments>
+    </PartnerLauncherArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <DebuggerFlavor>PartnerLauncher(SOLID_v7A_ARM)</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

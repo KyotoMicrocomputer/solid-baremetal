@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="binfmt_copyargv.c" />
+    <ClCompile Include="binfmt_dumpmodule.c" />
+    <ClCompile Include="binfmt_exec.c" />
+    <ClCompile Include="binfmt_execmodule.c" />
+    <ClCompile Include="binfmt_globals.c" />
+    <ClCompile Include="binfmt_initialize.c" />
+    <ClCompile Include="binfmt_loadmodule.c" />
+    <ClCompile Include="binfmt_register.c" />
+    <ClCompile Include="binfmt_unloadmodule.c" />
+    <ClCompile Include="binfmt_unregister.c" />
+    <ClCompile Include="builtin.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="binfmt.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="arm\src\armv7-m\arm_assert.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_blocktask.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_cache.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_copyarmstate.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_copyfullstate.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_doirq.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_hardfault.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_initialstate.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_memfault.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_releasepending.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_reprioritizertr.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_schedulesigaction.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_sigdeliver.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_svcall.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_trigger_irq.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_unblocktask.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\armv7-m\arm_vectors.c">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_allocateheap.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_clockconfig.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_gpio.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_gpioirq.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_hsmci.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_hsmci_clkdiv.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_irq.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_lowputc.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_pck.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_serial.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_start.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_timerisr.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_twihs.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_uid.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\chip\sam_xdmac.c">
+      <Filter>arm\src\chip</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_createstack.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_exit.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_idle.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_initialize.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_interruptcontext.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_mdelay.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_modifyreg16.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_modifyreg32.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_modifyreg8.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_releasestack.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_stackframe.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_udelay.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_usestack.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="arm\src\common\arm_vfork.c">
+      <Filter>arm\src\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arm\src\armv7-m\barriers.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\dwt.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\etm.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\exc_return.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\fpb.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\itm.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\itm_syslog.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\mpu.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\nvic.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\psr.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\ram_vectors.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\svcall.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\systick.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\armv7-m\tpi.h">
+      <Filter>arm\src\armv7-m</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\chip.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\same70_periphclks.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\samv71_periphclks.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_clockconfig.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_config.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_dac.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_eefc.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_ethernet.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_freerun.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_gpio.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_hsmci.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_lowputc.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_mcan.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_mpuinit.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_oneshot.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_pck.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_periphclks.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_progmem.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_qspi.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_spi.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_ssc.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_start.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_tc.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_trng.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_twihs.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_uid.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_usbdev.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_userspace.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_wdt.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\chip\sam_xdmac.h">
+      <Filter>arm\src\chip</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\common\arm_arch.h">
+      <Filter>arm\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\common\arm_internal.h">
+      <Filter>arm\src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="arm\src\common\arm_vfork.h">
+      <Filter>arm\src\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="arm">
+      <UniqueIdentifier>{7b44b1c1-f7f9-4119-82b9-ca63dec6b07e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\src">
+      <UniqueIdentifier>{138aa6e2-0d90-4725-88e2-3df71a5d49c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\src\armv7-m">
+      <UniqueIdentifier>{634a1785-3602-4d47-8bd2-03420f9078f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\src\armv7-m\gnu">
+      <UniqueIdentifier>{46bd2760-283b-4e0f-8cb3-fd56b45d97dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\src\chip">
+      <UniqueIdentifier>{65af62be-42f1-46c3-9a6c-cf1a1e3eecce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm\src\common">
+      <UniqueIdentifier>{ec9e4238-9a45-4c87-9058-4fdcb14e8d39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Assemble Include="arm\src\armv7-m\gnu\arm_fetchadd.S">
+      <Filter>arm\src\armv7-m\gnu</Filter>
+    </Assemble>
+    <Assemble Include="arm\src\armv7-m\gnu\arm_fpu.S">
+      <Filter>arm\src\armv7-m\gnu</Filter>
+    </Assemble>
+    <Assemble Include="arm\src\armv7-m\gnu\arm_fullcontextrestore.S">
+      <Filter>arm\src\armv7-m\gnu</Filter>
+    </Assemble>
+    <Assemble Include="arm\src\armv7-m\gnu\arm_lazyexception.S">
+      <Filter>arm\src\armv7-m\gnu</Filter>
+    </Assemble>
+    <Assemble Include="arm\src\armv7-m\gnu\arm_saveusercontext.S">
+      <Filter>arm\src\armv7-m\gnu</Filter>
+    </Assemble>
+    <Assemble Include="arm\src\armv7-m\gnu\arm_switchcontext.S">
+      <Filter>arm\src\armv7-m\gnu</Filter>
+    </Assemble>
+    <Assemble Include="arm\src\armv7-m\gnu\arm_testset.S">
+      <Filter>arm\src\armv7-m\gnu</Filter>
+    </Assemble>
+    <Assemble Include="arm\src\armv7-m\gnu\vfork.S">
+      <Filter>arm\src\armv7-m\gnu</Filter>
+    </Assemble>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="mm_heap\mm_addfreechunk.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_brkaddr.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_calloc.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_extend.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_free.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_heapmember.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_initialize.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_mallinfo.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_malloc.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_malloc_usable_size.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_memalign.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_realloc.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_sem.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_shrinkchunk.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_size2ndx.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="mm_heap\mm_zalloc.c">
+      <Filter>mm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_addregion.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_brkaddr.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_calloc.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_extend.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_free.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_globals.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_heapmember.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_initialize.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_mallinfo.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_malloc.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_memalign.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_realloc.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_sem.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+    <ClCompile Include="umm_heap\umm_zalloc.c">
+      <Filter>umm_heap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="umm_heap\umm_heap.h">
+      <Filter>umm_heap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mm_heap">
+      <UniqueIdentifier>{9c0300c8-c272-45bd-aabc-be6b288c1863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="umm_heap">
+      <UniqueIdentifier>{0282aa2e-2312-4568-98e5-802800926a0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

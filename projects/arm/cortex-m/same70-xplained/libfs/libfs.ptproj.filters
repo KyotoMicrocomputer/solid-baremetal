@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dirent\fs_closedir.c">
+      <Filter>dirent</Filter>
+    </ClCompile>
+    <ClCompile Include="dirent\fs_opendir.c">
+      <Filter>dirent</Filter>
+    </ClCompile>
+    <ClCompile Include="dirent\fs_readdir.c">
+      <Filter>dirent</Filter>
+    </ClCompile>
+    <ClCompile Include="dirent\fs_rewinddir.c">
+      <Filter>dirent</Filter>
+    </ClCompile>
+    <ClCompile Include="dirent\fs_seekdir.c">
+      <Filter>dirent</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_blockpartition.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_blockproxy.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_closeblockdriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_findblockdriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_findmtddriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_mtdproxy.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_openblockdriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_registerblockdriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_registerdriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_registermtddriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_unregisterblockdriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_unregisterdriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="driver\fs_unregistermtddriver.c">
+      <Filter>driver</Filter>
+    </ClCompile>
+    <ClCompile Include="fat\fs_fat32.c">
+      <Filter>fat</Filter>
+    </ClCompile>
+    <ClCompile Include="fat\fs_fat32attrib.c">
+      <Filter>fat</Filter>
+    </ClCompile>
+    <ClCompile Include="fat\fs_fat32dirent.c">
+      <Filter>fat</Filter>
+    </ClCompile>
+    <ClCompile Include="fat\fs_fat32util.c">
+      <Filter>fat</Filter>
+    </ClCompile>
+    <ClCompile Include="fs_initialize.c" />
+    <ClCompile Include="inode\fs_fileclose.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_filedetach.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_fileopen.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_files.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_foreachinode.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inode.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inodeaddref.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inodebasename.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inodefind.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inodefree.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inoderelease.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inoderemove.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inodereserve.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="inode\fs_inodesearch.c">
+      <Filter>inode</Filter>
+    </ClCompile>
+    <ClCompile Include="mmap\fs_mmap.c">
+      <Filter>mmap</Filter>
+    </ClCompile>
+    <ClCompile Include="mmap\fs_munmap.c">
+      <Filter>mmap</Filter>
+    </ClCompile>
+    <ClCompile Include="mount\fs_foreachmountpoint.c">
+      <Filter>mount</Filter>
+    </ClCompile>
+    <ClCompile Include="mount\fs_gettype.c">
+      <Filter>mount</Filter>
+    </ClCompile>
+    <ClCompile Include="mount\fs_mount.c">
+      <Filter>mount</Filter>
+    </ClCompile>
+    <ClCompile Include="mount\fs_procfs_mount.c">
+      <Filter>mount</Filter>
+    </ClCompile>
+    <ClCompile Include="mount\fs_umount2.c">
+      <Filter>mount</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_close.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_open.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="mqueue\mq_unlink.c">
+      <Filter>mqueue</Filter>
+    </ClCompile>
+    <ClCompile Include="partition\fs_partition.c">
+      <Filter>partition</Filter>
+    </ClCompile>
+    <ClCompile Include="procfs\fs_procfs.c">
+      <Filter>procfs</Filter>
+    </ClCompile>
+    <ClCompile Include="procfs\fs_procfscpuload.c">
+      <Filter>procfs</Filter>
+    </ClCompile>
+    <ClCompile Include="procfs\fs_procfsiobinfo.c">
+      <Filter>procfs</Filter>
+    </ClCompile>
+    <ClCompile Include="procfs\fs_procfsmeminfo.c">
+      <Filter>procfs</Filter>
+    </ClCompile>
+    <ClCompile Include="procfs\fs_procfsproc.c">
+      <Filter>procfs</Filter>
+    </ClCompile>
+    <ClCompile Include="procfs\fs_procfsuptime.c">
+      <Filter>procfs</Filter>
+    </ClCompile>
+    <ClCompile Include="procfs\fs_procfsutil.c">
+      <Filter>procfs</Filter>
+    </ClCompile>
+    <ClCompile Include="procfs\fs_procfsversion.c">
+      <Filter>procfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_close.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_dup.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_dup2.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_dupfd.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_dupfd2.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_epoll.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_fcntl.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_fdopen.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_fstat.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_fstatfs.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_fsync.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_getfilep.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_ioctl.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_lseek.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_mkdir.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_open.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_poll.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_pread.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_pwrite.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_read.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_readlink.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_rename.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_rmdir.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_select.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_stat.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_statfs.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_symlink.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_truncate.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_unlink.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+    <ClCompile Include="vfs\fs_write.c">
+      <Filter>vfs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="driver\driver.h">
+      <Filter>driver</Filter>
+    </ClInclude>
+    <ClInclude Include="fat\fs_fat32.h">
+      <Filter>fat</Filter>
+    </ClInclude>
+    <ClInclude Include="inode\inode.h">
+      <Filter>inode</Filter>
+    </ClInclude>
+    <ClInclude Include="mmap\fs_rammap.h">
+      <Filter>mmap</Filter>
+    </ClInclude>
+    <ClInclude Include="mount\mount.h">
+      <Filter>mount</Filter>
+    </ClInclude>
+    <ClInclude Include="mqueue\mqueue.h">
+      <Filter>mqueue</Filter>
+    </ClInclude>
+    <ClInclude Include="partition\partition.h">
+      <Filter>partition</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dirent">
+      <UniqueIdentifier>{e31fc1e2-49c8-4d2c-a9b6-a6582ca185dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="driver">
+      <UniqueIdentifier>{ae93aebf-62cc-495b-9c62-ad7ec61e7191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fat">
+      <UniqueIdentifier>{9b68ec35-3dce-4deb-b3bc-ca8c885a92b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inode">
+      <UniqueIdentifier>{92ebf160-8b64-492f-9785-b10aca2d9fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mmap">
+      <UniqueIdentifier>{08174ad2-1040-4559-b505-688e83f6fd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mount">
+      <UniqueIdentifier>{f35152c0-1194-4f52-9571-36ac076fba3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mqueue">
+      <UniqueIdentifier>{71aa8e5b-82e7-4a34-a2ad-d323233b6955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="partition">
+      <UniqueIdentifier>{9ab9cae9-f7dd-45f6-a098-06bd1f59418d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="procfs">
+      <UniqueIdentifier>{2a4743de-6391-4795-bb7f-b3b9dc870993}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vfs">
+      <UniqueIdentifier>{13b020eb-7cca-41a8-a0ae-fd64d6927ee9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

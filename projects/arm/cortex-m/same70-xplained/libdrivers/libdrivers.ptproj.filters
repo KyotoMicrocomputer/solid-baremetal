@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="bch\bch.h">
+      <Filter>bch</Filter>
+    </ClInclude>
+    <ClInclude Include="i2c\pca9540bdp.h">
+      <Filter>i2c</Filter>
+    </ClInclude>
+    <ClInclude Include="mmcsd\mmcsd.h">
+      <Filter>mmcsd</Filter>
+    </ClInclude>
+    <ClInclude Include="mmcsd\mmcsd_csd.h">
+      <Filter>mmcsd</Filter>
+    </ClInclude>
+    <ClInclude Include="mmcsd\mmcsd_sdio.h">
+      <Filter>mmcsd</Filter>
+    </ClInclude>
+    <ClInclude Include="mmcsd\mmcsd_spi.h">
+      <Filter>mmcsd</Filter>
+    </ClInclude>
+    <ClInclude Include="pipes\pipe_common.h">
+      <Filter>pipes</Filter>
+    </ClInclude>
+    <ClInclude Include="serial\pty.h">
+      <Filter>serial</Filter>
+    </ClInclude>
+    <ClInclude Include="syslog\syslog.h">
+      <Filter>syslog</Filter>
+    </ClInclude>
+    <ClInclude Include="syslog\syslog_rpmsg.h">
+      <Filter>syslog</Filter>
+    </ClInclude>
+    <ClInclude Include="usbhost\usbhost_composite.h">
+      <Filter>usbhost</Filter>
+    </ClInclude>
+    <ClInclude Include="usbhost\usbhost_registry.h">
+      <Filter>usbhost</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bch\bchdev_driver.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="bch\bchdev_register.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="bch\bchdev_unregister.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="bch\bchlib_cache.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="bch\bchlib_read.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="bch\bchlib_sem.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="bch\bchlib_setup.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="bch\bchlib_teardown.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="bch\bchlib_write.c">
+      <Filter>bch</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_null.c" />
+    <ClCompile Include="dev_zero.c" />
+    <ClCompile Include="i2c\i2c_driver.c">
+      <Filter>i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="i2c\i2c_read.c">
+      <Filter>i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="i2c\i2c_write.c">
+      <Filter>i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="i2c\i2c_writeread.c">
+      <Filter>i2c</Filter>
+    </ClCompile>
+    <ClCompile Include="loop\losetup.c">
+      <Filter>loop</Filter>
+    </ClCompile>
+    <ClCompile Include="mkrd.c" />
+    <ClCompile Include="mmcsd\mmcsd_sdio.c">
+      <Filter>mmcsd</Filter>
+    </ClCompile>
+    <ClCompile Include="mtd\at24xx.c">
+      <Filter>mtd</Filter>
+    </ClCompile>
+    <ClCompile Include="mtd\at25.c">
+      <Filter>mtd</Filter>
+    </ClCompile>
+    <ClCompile Include="mtd\ftl.c">
+      <Filter>mtd</Filter>
+    </ClCompile>
+    <ClCompile Include="mtd\mtd_config.c">
+      <Filter>mtd</Filter>
+    </ClCompile>
+    <ClCompile Include="pipes\fifo.c">
+      <Filter>pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="pipes\pipe.c">
+      <Filter>pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="pipes\pipe_common.c">
+      <Filter>pipes</Filter>
+    </ClCompile>
+    <ClCompile Include="ramdisk.c" />
+    <ClCompile Include="serial\serial.c">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="serial\serial_io.c">
+      <Filter>serial</Filter>
+    </ClCompile>
+    <ClCompile Include="spi\spi_transfer.c">
+      <Filter>spi</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_channel.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_device.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_emergstream.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_flush.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_force.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_initialize.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_putc.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_stream.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\syslog_write.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="syslog\vsyslog.c">
+      <Filter>syslog</Filter>
+    </ClCompile>
+    <ClCompile Include="usbhost\hid_parser.c">
+      <Filter>usbhost</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="bch">
+      <UniqueIdentifier>{cce63890-835d-4de5-98ef-6bac3fe63d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i2c">
+      <UniqueIdentifier>{7ef5033b-1085-44b8-85d5-994085074a70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loop">
+      <UniqueIdentifier>{ec055e97-03a3-4910-84a0-ceba776ac643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mmcsd">
+      <UniqueIdentifier>{ab9e0beb-838f-46d7-8800-e336af22d308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mtd">
+      <UniqueIdentifier>{3b42e0bc-78ad-477b-b868-938cad01ce6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pipes">
+      <UniqueIdentifier>{f3d9a46c-88a7-460f-b7c6-3c0eeae8333e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serial">
+      <UniqueIdentifier>{ad7654e4-cc83-44cb-be63-0bf477f52c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spi">
+      <UniqueIdentifier>{86999fdb-0b4a-4a04-8bb0-2608bff15c68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="syslog">
+      <UniqueIdentifier>{8316688f-3a27-4418-8c0f-d0b611668048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="usbhost">
+      <UniqueIdentifier>{de28ea0b-7f88-4f9f-bbd0-2d2f1cd71fdf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

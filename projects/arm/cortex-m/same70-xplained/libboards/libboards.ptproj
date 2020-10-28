@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_clang|SOLID_ARM">
+      <Configuration>Debug_clang</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_tasan|SOLID_ARM">
+      <Configuration>Debug_tasan</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_tracepoint|SOLID_ARM">
+      <Configuration>Debug_tracepoint</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_clang|SOLID_ARM">
+      <Configuration>Release_clang</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|SOLID_ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|SOLID_ARM">
+      <Configuration>Release</Configuration>
+      <Platform>SOLID_ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="boardctl.c" />
+    <ClCompile Include="dummy.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6fa3f1ad-9d66-4948-9952-a5ddb7645c85}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeClang_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeGCC_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>exeGCC_SOLID_s005</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(SolutionDir)$(SolutionName).props" Condition="exists('$(SolutionDir)$(SolutionName).props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\KMC.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\KMC.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <EXEGCC_Core>Cortex-M7</EXEGCC_Core>
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+    <EXEGCC_VFP>FPv5-DP-D16_hard</EXEGCC_VFP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'">
+    <EnableAddressSanitizer>true</EnableAddressSanitizer>
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+    <EXEGCC_Core>Cortex-M7</EXEGCC_Core>
+    <EXEGCC_VFP>FPv5-DP-D16_hard</EXEGCC_VFP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'">
+    <IncludePath>$(SolutionDir)\libarch\arm\src\samv7;$(SolutionDir)\libarch\arm\src\common;$(SolutionDir)\libarch\arm\src\armv7-m;$(SolutionDir)\libarch\arm\src\chip;$(SolutionDir)\sched;$(SolutionDir)\sched;$(SolutionDir)\include;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\arm-kmc-eabi;$(GCCDIR)\arm-kmc-eabi\include\c++\6.4.0\backward;$(GCCDIR)\arm-kmc-eabi\include;$(GCCDIR)\include;$(GCCDIR)\include\c++;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_clang|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>__KERNEL__</exeGCC_PreprocessorDefinitions>
+      <AdditionalOptions>-fno-builtin  -Wall -Wstrict-prototypes -Wshadow -Wundef -fno-strict-aliasing -Os -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard </AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tasan|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>USE_TASAN;%(exeGCC_PreprocessorDefinitions)</exeGCC_PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_tracepoint|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O0</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <exeGCC_PreprocessorDefinitions>USE_TRACE_POINT;%(exeGCC_PreprocessorDefinitions)</exeGCC_PreprocessorDefinitions>
+      <AdditionalOptions>-finstrument-functions %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_clang|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O2</exeGCC_Optimization>
+      <exeClang_Optimization>O2</exeClang_Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>Os</exeGCC_Optimization>
+      <exeClang_Optimization>O0</exeClang_Optimization>
+      <AdditionalOptions>-Wshadow -Wundef -fno-strict-aliasing -fno-builtin -Wstrict-prototypes %(AdditionalOptions)</AdditionalOptions>
+      <exeGCC_PreprocessorDefinitions>__KERNEL__</exeGCC_PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|SOLID_ARM'">
+    <ClCompile>
+      <exeGCC_Optimization>O2</exeGCC_Optimization>
+      <exeClang_Optimization>O2</exeClang_Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(KMCTargetsPath)\KMC.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
