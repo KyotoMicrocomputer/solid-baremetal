@@ -1,0 +1,102 @@
+ENTRY(_start)
+
+SECTIONS {
+    _xfer = 0 ;
+
+    _ram = 0xe6300000;
+    _ram_end = _ram + 0x20000;
+    _heap_size = 0x4000;
+
+    _stack_init     = _ram_end - 0x5000;        /* SVC stack */
+    _stack_init_irq = _ram_end - 0x4000;        /* IRQ stack */
+    _stack_init_fiq = _ram_end - 0x3000;        /* FIQ stack */
+    _stack_init_und = _ram_end - 0x2000;        /* UND stack */
+    _stack_init_abt = _ram_end - 0x1000;        /* ABT stack */
+    _stack_init_usr = _ram_end;         /* USR stack */
+
+
+    .text _ram :
+
+    {
+        _stext = . ; _rom_base = . ;
+        *(.text .stub .text.* .gnu.linkonce.t.*)
+        *(.glue_7t) *(.glue_7) *(.vfp11_veneer) *(.v4_bx)
+        . = ALIGN(4) ;
+
+        _etext  = . ;
+    }
+
+
+    .rodata . :
+
+    {
+        *(.rodata .rodata.*)
+        *(.gnu.linkonce.r.*)
+
+        . = ALIGN(4) ;
+        _ctor_list = . ;
+        KEEP (*(SORT(.init_array.*)))
+        KEEP (*(.init_array))
+        LONG (0);
+
+        _dtor_list = . ;
+        KEEP (*(.fini_array))
+        KEEP (*(SORT(.fini_array.*)))
+        LONG (0);
+
+        . = ALIGN(4);
+        _erdata  = . ;
+    }
+
+    .ARM.extab   : { *(.ARM.extab* .gnu.linkonce.armextab.*) }
+     __exidx_start = .;
+    .ARM.exidx   : { *(.ARM.exidx* .gnu.linkonce.armexidx.*) }
+     __exidx_end = .;
+
+    .data . :
+
+    {
+        _data  = . ;
+        *(.data .data.*)
+        *(.gnu.linkonce.d.*)
+
+		/* Append the LLVM profiling sections */
+        . = ALIGN(8);
+        PROVIDE(__start___llvm_prf_cnts = .);
+        KEEP(*(__llvm_prf_cnts))
+        PROVIDE(__stop___llvm_prf_cnts = .);
+
+        . = ALIGN(8);
+        PROVIDE(__start___llvm_prf_data = .);
+        KEEP(*(__llvm_prf_data))
+        PROVIDE(__stop___llvm_prf_data = .);
+
+        _edata = . ;
+    }
+
+
+    .bss : {
+        _fbss = . ;
+        *(.sbss .sbss.*)
+        *(.bss .bss.*)
+        *(.gnu.linkonce.b.*)
+        *(COMMON)
+        _end = . ;
+        _heap = . ;
+    }
+
+    .debug          0 : { *(.debug) }
+    .line           0 : { *(.line) }
+    .debug_srcinfo  0 : { *(.debug_srcinfo) }
+    .debug_sfnames  0 : { *(.debug_sfnames) }
+    .debug_aranges  0 : { *(.debug_aranges) }
+    .debug_pubnames 0 : { *(.debug_pubnames) }
+
+    .debug_info     0 : { *(.debug_info) }
+    .debug_abbrev   0 : { *(.debug_abbrev) }
+    .debug_line     0 : { *(.debug_line) }
+    .debug_frame    0 : { *(.debug_frame) }
+    .debug_str      0 : { *(.debug_str) }
+    .debug_loc      0 : { *(.debug_loc) }
+    .debug_macinfo  0 : { *(.debug_macinfo) }
+}

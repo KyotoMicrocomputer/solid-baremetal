@@ -1,0 +1,4 @@
+R-Car_E3_A53_R7_SMP
+ARM@SMP1=.\core0
+ARM@SMP1=.\core1
+ARM@SMP1=.\core2

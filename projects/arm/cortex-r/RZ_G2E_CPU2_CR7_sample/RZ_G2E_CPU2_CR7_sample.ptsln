@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# PARTNER-IDE 1
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9CB6BABF-FFDD-4757-BAF4-5C11230D6845}") = "sample", "sample\sample.ptproj", "{BFC08022-3447-4D07-BAE6-617032518327}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_clang|SOLID_ARM = Debug_clang|SOLID_ARM
+		Debug|SOLID_ARM = Debug|SOLID_ARM
+		Release_clang|SOLID_ARM = Release_clang|SOLID_ARM
+		Release|SOLID_ARM = Release|SOLID_ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFC08022-3447-4D07-BAE6-617032518327}.Debug_clang|SOLID_ARM.ActiveCfg = Debug_clang|SOLID_ARM
+		{BFC08022-3447-4D07-BAE6-617032518327}.Debug_clang|SOLID_ARM.Build.0 = Debug_clang|SOLID_ARM
+		{BFC08022-3447-4D07-BAE6-617032518327}.Debug|SOLID_ARM.ActiveCfg = Debug|SOLID_ARM
+		{BFC08022-3447-4D07-BAE6-617032518327}.Debug|SOLID_ARM.Build.0 = Debug|SOLID_ARM
+		{BFC08022-3447-4D07-BAE6-617032518327}.Release_clang|SOLID_ARM.ActiveCfg = Release_clang|SOLID_ARM
+		{BFC08022-3447-4D07-BAE6-617032518327}.Release_clang|SOLID_ARM.Build.0 = Release_clang|SOLID_ARM
+		{BFC08022-3447-4D07-BAE6-617032518327}.Release|SOLID_ARM.ActiveCfg = Release|SOLID_ARM
+		{BFC08022-3447-4D07-BAE6-617032518327}.Release|SOLID_ARM.Build.0 = Release|SOLID_ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
